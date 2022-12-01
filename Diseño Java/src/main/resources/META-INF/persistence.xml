@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="db" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>Formularios.Preguntas.Respuesta</class>
+        <class>Formularios.Repos.RepoRespuestas</class>
+        <class>Usuarios.Seguridad.Contrasenia</class>
+        <class>Usuarios.Usuario</class>
+        <class>Usuarios.Administrador</class>
+        <class>Usuarios.Duenio</class>
+        <class>Usuarios.Voluntario</class>
+        <class>Usuarios.Persona</class>
+        <class>Usuarios.atributos.Contacto</class>
+        <class>Usuarios.atributos.TipoDocumento</class>
+        <class>Formularios.Publicaciones.PublicacionQuererAdoptar</class>
+        <class>Mascotas.Animal</class>
+        <class>Mascotas.Mascota</class>
+        <class>Mascotas.Foto</class>
+        <class>Mascotas.Caracteristica</class>
+        <class>Formularios.Asociacion</class>
+        <class>Formularios.Direccion</class>
+        <class>Formularios.Preguntas.PreguntaAdopcion</class>
+        <class>Formularios.Preguntas.PreguntaConOpciones</class>
+        <class>Formularios.Preguntas.PreguntaSimple</class>
+        <class>Formularios.Preguntas.Respuesta</class>
+        <class>Formularios.Publicaciones.PublicacionDarEnAdopcion</class>
+        <class>Usuarios.Rescatista</class>
+        <class>Mascotas.MascotaEncontrada</class>
+
+
+        <properties>
+            <property name="hibernate.archive.autodetection" value="class"/>
+
+             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/db_tp" />
+            <property name="hibernate.connection.username" value="root" /> 
+            <property name="hibernate.connection.password" value="admin" />
+
+           <!-- <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver"/>
+            <property name="hibernate.connection.url" value="jdbc:hsqldb:mem:app-db"/>
+            <property name="hibernate.connection.username" value="sa"/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>-->
+
+
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="use_sql_comments" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+
+    </persistence-unit>
+
+</persistence> 

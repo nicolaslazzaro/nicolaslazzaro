@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eb6a2e;">
+        <div class="container-fluid">
+            <a class="navbar-brand px-3" >
+                <img src="../../../src/main/resources/templates/imagenes/patita-de-perro.png" alt="" width="30" height="24" class="d-inline-block align-text-top" >
+            </a>                  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item px-3">
+                              <a class="nav-link active " aria-current="page" href="#">                                      
+                                      <img src="../../../src/main/resources/templates/imagenes/pngwing.com.png" alt="" width="30" height="24" class="d-inline-block align-text-top" >
+                                  Home
+                              </a>
+                          </li>
+                          <li class="nav-item px-3">
+                              <a class="nav-link" href="#">
+                                  <img src="../../../src/main/resources/templates/imagenes/kisspng-logo-silhouette-dog-bone-dog-5ad41d4b78ba68.7219948915238505714945.png" alt="" width="30" height="24" class="d-inline-block align-text-top" >
+                                  Mascota Encontrada
+                              </a>
+                          </li>
+                          <li class="nav-item px-3">
+                            <a class="nav-link" href="#">
+                                <img src="../../../src/main/resources/templates/imagenes/gato.png" alt="" width="50" height="24" class="d-inline-block align-text-top" >
+                                Registrar Mi Mascota
+                            </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav me-end mb-2 ">
+                            <li class="nav-item px-3">
+                                <a class="nav-link active " aria-current="page" href="#">                                      
+                                        <img src="../../../src/main/resources/templates/imagenes/password.png" alt="" width="30" height="24" class="d-inline-block align-text-top" >
+                                    login
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>  
+        </div>
+      </nav>
+</div>
+
+<div class="container mt-1">
+  <h1 >
+    Registrar Mascota Encontrada
+  </h1>
+</div>
+<div class="container mt-5 ">
+  <div class="row align-items-cente">
+    <div class="col">
+    </div>
+    <div class="col-8 align-self-center">
+
+      <!-- DAtos Encuentro -->
+
+      <h3>Datos del encuentro</h3>
+  
+      <div class="mb-3 mt-4">
+          <label for="date" class="form-label">Fecha de encuentro </label>
+          <input type="date" class="form-control" id="date" aria-describedby="date">              
+      </div>
+      
+      <div class="mb-3">
+        <label for="numbers" class="form-label">
+          Ubicacion
+        </label>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <input  type="number" class=" col form-control " id="numbers" placeholder="  Latitud  ">
+            </div>
+            <div class="col">
+              <input  type="number" class=" col form-control " id="numbers" placeholder="  longitud  ">
+            </div>
+          </div>
+        </div>                           
+      </div>
+      
+        <!-- RESCATISTA -->
+
+      <div>
+        <h3>Datos de Rescatista</h3>
+        <label for="numbers" class="form-label">
+          Ingrese Nombre y Apellido
+        </label>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <input  type="text" class=" col form-control " id="Nombre" placeholder="  Nombre  ">
+            </div>
+            <div class="col">
+              <input  type="text" class=" col form-control " id="Apellido" placeholder="  Apellido  ">
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <label for="date" class="form-label">Fecha de Nacimiento </label>
+          <input type="date" class="form-control" id="date" aria-describedby="date">              
+        </div>
+
+        <div class="mb-3 mt-3">
+          <label for="numbers" class="form-label">
+            Documento
+          </label>
+          <div class="input-group mb-3 mt-1">
+            <button class="btn btn-outline-Dark dropdown-toggle" type="button" style="background: #eb6a2e;" data-bs-toggle="dropdown" aria-expanded="false">Tipo de Documento</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">DNI</a></li>
+              <li><a class="dropdown-item" href="#">Pasaporte</a></li>
+              <li><a class="dropdown-item" href="#">Otro</a></li>              
+            </ul>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          </div>
+        </div>
+        
+
+      </div>
+
+      <label for="numbers" class="form-label">
+        Ingrese direccion
+      </label>
+      <div >
+        <div class="row align-items-center">
+          <div >
+            <input  type="text" class=" col form-control " id="localidad" placeholder="  localidad  ">
+          </div>
+          <div class="col mt-3">
+            <input  type="text" class=" col form-control " id="calle" placeholder="  Calle  ">
+            <input  type="text" class=" col form-control mt-3" id="piso" placeholder="  Piso  ">
+          </div>
+          <div class="col mt-3">
+            <input  type="text" class=" col form-control " id="numero" placeholder="  Numero  ">
+            <input  type="text" class=" col form-control mt-3" id="Departamento" placeholder="  Departamento  ">
+          </div>
+        </div>
+      </div>
+      
+      <div class="md-5 text-center mt-4" >
+        <button type="submit" class="btn btn-outline-dark  mt-3" style="background: #eb6a2e;">Submit</button>
+      </div>
+          
+
+       
+
+
+    </div>
+    <div class="col">
+    </div>
+  </div>
+
+  </div>
+
+  <footer class="page-footer font-small blue mt-5" style="background: #eb6a2e;">
+
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <a href="https://mascotasfelices.com/"> https://mascotasfelices.com</a>
+      </div>
+  
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  </body>
+
+</html>
